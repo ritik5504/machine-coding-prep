@@ -1,0 +1,36 @@
+*{
+    /* background-color: beige; */
+    margin: 0;;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background: #7494b4;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+.app{
+    width: 100%;
+    max-width: 500px;
+    background-color: azure;
+    padding: 25px;
+    border-radius: 12px;
+
+}
+h1 {
+   
+    color: #141212;
+}
+.form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+button {
+    background: #141212;
+    color: white;
+}

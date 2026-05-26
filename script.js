@@ -19,7 +19,9 @@ form.addEventListener("submit",function(e){
 
     const item=document.createElement("div");
 
-    //create paragraph
+    const checkbox=document.createElement("input");
+    checkbox.type="checkbox";
+
 
     const todoitem=document.createElement("p");
     todoitem.textContent=todotext;
@@ -31,8 +33,17 @@ form.addEventListener("submit",function(e){
         item.remove();
 
     })
+
+    checkbox.addEventListener("chnage",function(){
+        if(checkbox.checked){
+            todoitem.style.textDecoration="line-through";
+        }else{
+            todoitem.style.textDecoration="none";
+        }
+    })
     item.appendChild(todoitem);
     item.appendChild(deletebtn);
+    item.appendChild(checkbox);
 
     todocontainer.appendChild(item);
     todo.value="";

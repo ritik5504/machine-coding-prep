@@ -4,12 +4,14 @@ import './index.css'
 import App from './App.jsx'
 import Rating from './Rating.jsx'
 import Todo from './Todo.jsx'
+import Page from './Page.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
     {/* <Rating/> */}
-    <Todo/>
+    {/* <Todo/> */}
+    <Page/>
 
   </StrictMode>,
 )

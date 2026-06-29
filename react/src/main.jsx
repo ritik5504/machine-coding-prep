@@ -5,13 +5,15 @@ import App from './App.jsx'
 import Rating from './Rating.jsx'
 import Todo from './Todo.jsx'
 import Page from './Page.jsx'
+import Modal from './Modal.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
     {/* <Rating/> */}
     {/* <Todo/> */}
-    <Page/>
+    {/* {<Page/>} */}
+    <Modal/>
 
   </StrictMode>,
 )
